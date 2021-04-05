@@ -3,5 +3,9 @@
   <a href="/about">Über uns</a>
   <a href="/resume">Résumé</a>
   <a href="/contact">Contact</a>
-  <a href="/projects">Projekte</a>
+  <a href="/projects">Projekt-Liste</a>
+  {{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+  <a href="{{.RelPermalink}}">Aktuellstes Projekt:{{.Title}}</a>
+  {{end}}
+
 </nav>

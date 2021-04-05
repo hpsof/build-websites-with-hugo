@@ -1,10 +1,17 @@
 {{define "main"}}
 
 <h2>{{.Title}}</h2>
+
+{{.Content}}
+
 <ul>
   {{range.Pages}}
   <li><a href="{{.RelPermalink}}">{{.Title}}<a></li>
   {{end}}
 </ul>
+
+{{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+info: aktuellstes projekt in der liste ist <a href="{{.RelPermalink}}">{{.Title}}<a>
+{{end}}
 
 {{end}}

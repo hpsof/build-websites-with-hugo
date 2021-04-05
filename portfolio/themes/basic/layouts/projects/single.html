@@ -1,0 +1,20 @@
+{{define "main"}}
+
+<div class="project-container">
+
+  <div class="column_left">
+    <h2>Projekte</h2>
+    <ul>
+      {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).ByTitle }}
+      <li><a href="{{.RelPermalink}}">{{.Title}}<a></li>
+      {{end}}
+    </ul>
+  </div>
+
+  <div class="column_right">
+    <h2>{{.Title}}</h2>
+    {{.Content}}
+  </div>
+
+</div>
+{{end}}

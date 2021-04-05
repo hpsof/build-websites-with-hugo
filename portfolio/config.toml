@@ -2,3 +2,7 @@ baseURL = "http://example.org/"
 languageCode = "de-CH"
 title = "Portfolio | Book about building HUGO websites"
 theme="basic"
+
+
+[params]
+  mainSections = ["projects"]
