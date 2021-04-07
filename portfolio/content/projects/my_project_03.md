@@ -1,16 +1,17 @@
 ---
-title: "sofim"
-date: 2021-04-05T16:56:09+02:00
+title: "My_project_03"
+date: 2021-04-07T19:11:05+02:00
 draft: false
+image: //via.placeholder.com/640x150
+alt_text: "My_project_03 | screenshot"
+summary: "Zusammenfassung von Projekt My_project_03"
+tech_used:
+- HUGO-Framework
+- JavaScript
+- CSS
+- HTML
+
+
 ---
 
-![placeholder](//via.placeholder.com/640x150)
-
-sofim webseite mit JQuery, 2013
-
-### Javascript Framework
-
--  Responsive +/-
--  Alles handverlismet
--  altbacken
--  kein https, nur lesen
+Beschreibung von Projekt My_project_03

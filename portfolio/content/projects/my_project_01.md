@@ -1,16 +1,17 @@
 ---
-title: "BLS TIM"
-date: 2021-04-05T16:51:12+02:00
+title: "My_project_01"
+date: 2021-04-07T19:11:13+02:00
 draft: false
+image: //via.placeholder.com/640x150
+alt_text: "My_project_01 | screenshot"
+summary: "Zusammenfassung von Projekt My_project_01"
+tech_used:
+- HUGO-Framework
+- JavaScript
+- CSS
+- HTML
+
+
 ---
 
-![placeholder](//via.placeholder.com/640x150)
-
-BLS TIM, Webapp seit 2008
-
-### Stack
-
--  Java serverseitig mit diversen Frameworks
--  Hibernate
--  Oracle DB
--  Quipukit
+Beschreibung von Projekt My_project_01

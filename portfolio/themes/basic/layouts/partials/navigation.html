@@ -5,7 +5,7 @@
   <a href="/contact">Contact</a>
   <a href="/projects">Projekt-Liste</a>
   {{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
-  <a href="{{.RelPermalink}}">Aktuellstes Projekt:{{.Title}}</a>
+  <a href="{{.RelPermalink}}">Aktuellstes Projekt: {{.Title}}</a>
   {{end}}
 
 </nav>
