@@ -8,6 +8,12 @@
   {{- else -}}
     {{.Site.Params.description}}
   {{- end -}}">
-  <title>{{.Site.Title}}</title>
+  <title>
+    {{- if .Page.IsHome -}}
+      {{.Site.Title}}
+    {{- else -}}
+      {{.Title}} | {{.Site.Title}}
+    {{- end -}}
+  </title>
   <link rel="stylesheet" href="{{"css/style.css" | relURL}}">
 </head>

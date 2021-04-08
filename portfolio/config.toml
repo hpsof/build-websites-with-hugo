@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "de-CH"
-title = "Portfolio | Book about building HUGO websites"
+title = "Portfolio (Book building HUGO-websites)"
 # googleAnalytics = "UA-xxx..."
 #                 ...+ in head.html add {{template "_internal/google_analytics_async.html" . }}
 theme="basic"
