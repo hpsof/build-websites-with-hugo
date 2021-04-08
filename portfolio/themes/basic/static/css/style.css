@@ -7,7 +7,7 @@ nav, footer {
   background-color: #84b3f0;
   color: #fff;
   text-align: center;
-    padding: 5px;
+  padding: 5px;
 }
 
 nav {
@@ -22,10 +22,32 @@ nav > a {
   color: #fff;
 }
 
+ul.circle {
+  list-style-type: circle;
+}
+
+.reposlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-start;
+}
+
+.reposlist repos {
+  border: 1px solid tomato;
+  background-color: LemonChiffon;
+  box-shadow: 3px 3px 3px #ddd;
+  margin: 0.5%;
+  padding: 0px 10px 10px 10px;
+  flex-shrink: 1 ;
+  flex-grow: 1 ;
+  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+}
 
 @media only screen and (min-width: 768px) {
   nav {flex-direction: row;}
   div.project-container {display: flex;  justify-content: flex-start; }
   div.column_left {flex: 0.3; padding: 0px 15px 0px 0px; }
   div.column_right {flex: 1; }
+
 }

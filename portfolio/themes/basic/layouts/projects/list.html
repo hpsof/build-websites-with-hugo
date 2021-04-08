@@ -16,6 +16,11 @@
   {{end}}
 </ul>
 
-
+<div>
+  {{ with .Site.GetPage "/opensource.md" }}
+  <h4><a href="{{ .RelPermalink }}">{{.Title}}</a>&nbsp;
+  <small>({{ .Summary }})</small></h4>
+  {{ end }}
+</div>
 
 {{end}}

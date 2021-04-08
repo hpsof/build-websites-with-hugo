@@ -10,3 +10,5 @@ theme="basic"
   mainSections = ["projects"]
   author = "hpsof"
   description = "Portfolio Demo-Projekt aus Buch"
+  github_api_url = "https://api.github.com/users"
+  github_user = "hpsof"
