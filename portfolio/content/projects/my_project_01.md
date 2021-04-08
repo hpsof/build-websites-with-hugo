@@ -5,6 +5,7 @@ draft: false
 image: //via.placeholder.com/640x150
 alt_text: "My_project_01 | screenshot"
 summary: "Zusammenfassung von Projekt My_project_01"
+description: "super projekt"
 tech_used:
 - HUGO-Framework
 - JavaScript

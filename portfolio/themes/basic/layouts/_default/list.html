@@ -2,17 +2,10 @@
 
 <h2>{{.Title}}</h2>
 
-<div>
-  {{.Content}}
-  {{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
-  info: aktuellstes projekt in der liste ist <a href="{{.RelPermalink}}">{{.Title}}<a>
-  {{end}}
-</div>
 
 <ul>
   {{range.Pages}}
-  <li><a href="{{.RelPermalink}}">{{.Title}}<a></li>
-  <p>{{.Summary}}</p>
+  <li><a href="{{.RelPermalink}}">{{.Title}}<a>
   {{end}}
 </ul>
 
