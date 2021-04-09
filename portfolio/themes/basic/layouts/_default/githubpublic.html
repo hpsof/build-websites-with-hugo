@@ -10,8 +10,9 @@
 <hr />
 
 <section class="reposlist">
-  {{ $repos := getJSON $url }}
-  {{ range sort $repos "updated_at" "desc" }}
+  {{ $repos := getJSON $url }}  <!-- ignoreCache is important -->
+  <!-- {{ print $repos }} -->
+  {{ range  sort $repos "updated_at" "desc" }}
   <repos>
     <h3><a href="{{.html_url}}" target="_blank">{{.name}}</a><br />
       {{ with .description }}
