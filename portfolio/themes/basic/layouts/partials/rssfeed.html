@@ -1,12 +1,8 @@
-
 {{ range .AlternativeOutputFormats -}}
   {{- $link:= `<link rel="%s" type="%s" href="%s" title="%s">` -}}
   {{- $title:= printf "%s | %s" $.Page.Title $.Site.Title -}}
-
   {{- if $.Page.IsHome -}}
     {{ $title = $.Site.Title }}
   {{ end }}
-
-  {{ printf $link .Rel .MediaType.Type .Permalink $title | safeHTML }}
-
+  {{ printf $link .Rel .MediaType.Type .Permalink $title | safeHTML -}}
 {{ end }}
