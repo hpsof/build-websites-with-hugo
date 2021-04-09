@@ -3,9 +3,9 @@
 <h2>{{.Title}}</h2>
 {{ $url := printf "%s/%s/repos" .Site.Params.github_api_url .Site.Params.github_user }}
 <ul class="circle">
-  <li class="sb">Public GitHub Repos von</li>
+  <li>Public GitHub Repos von</li>
   <!-- {{.Content}} -->
-  <li class="sb">{{print $url}}</li>
+  <li>{{print $url}}</li>
 </ul>
 <hr />
 
