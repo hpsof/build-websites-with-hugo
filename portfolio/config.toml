@@ -15,5 +15,5 @@ github_user = "hpsof"
 
 [caches]
   [caches.getjson]
-  # -1 : ewig |  0 : nicht "10s" : 10 sec
-  maxAge = 0
+    dir = ":cacheDir/:project"
+    maxAge = 0   # -1 : ewig |  0 : nicht "10s" : 10 sec
