@@ -1,3 +1,8 @@
 <footer>
-  <small>copyright &copy;hpsof | {{now.Format "2006-01-02 15:04"}}</small>
+  <small>
+    copyright &copy; {{ .Site.Params.Author }} | {{ now.Format "2006-01-02 15:04"}}
+    <hr />
+    {{- partial "socialmedialinks.html" . -}}
+  </small>
+
 </footer>
