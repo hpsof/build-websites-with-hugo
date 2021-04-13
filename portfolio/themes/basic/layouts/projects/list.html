@@ -9,6 +9,8 @@
   {{end}}
 </div>
 
+
+
 <ul>
   {{range.Pages}}
   <li><a href="{{.RelPermalink}}">{{.Title}}<a>
@@ -16,11 +18,24 @@
   {{end}}
 </ul>
 
+
 <div>
   {{ with .Site.GetPage "/opensource.md" }}
   <h4><a href="{{ .RelPermalink }}">{{.Title}}</a>&nbsp;
   <small>({{ .Summary }})</small></h4>
   {{ end }}
 </div>
+
+
+<hr />
+<div align="center">
+  <h4>hier noch ein beispiel für pagination:</h4>
+  {{range (.Paginator 2).Pages }}
+  <a href="{{.RelPermalink}}">{{.Title}} - {{.Summary}}<br />
+  {{end}}
+  {{ template "_internal/pagination.html" . }}
+</div>
+<hr />
+
 
 {{end}}

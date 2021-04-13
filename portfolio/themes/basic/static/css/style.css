@@ -44,10 +44,41 @@ ul.circle {
   flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
 }
 
+.pagination {
+  display: flex;
+  justify-content: space-start;
+  list-style: none;
+  margin: 1em auto;
+  padding: 0
+}
+
+.pagination > .page-item {
+  flex: 1;
+  border: 1px solid #84b3f0;
+  text-align: center;
+  width: 3em;
+  font-size: small;
+  font-weight: bold;
+}
+
+.pagination .page-link {
+  display: block;
+  color: #84b3f0;
+  text-decoration: none;
+}
+
+.pagination > .page-item.active {
+  background-color: #84b3f0;
+}
+
+.pagination > .page-item.active > .page-link {
+  color: #fff;
+}
+
 @media only screen and (min-width: 768px) {
   nav {flex-direction: row;}
   div.project-container {display: flex;  justify-content: flex-start; }
   div.column_left {flex: 0.3; padding: 0px 15px 0px 0px; }
   div.column_right {flex: 1; }
-
+  .pagination { width: 20%; }
 }
