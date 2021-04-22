@@ -4,7 +4,7 @@ title = "Portfolio (Book building HUGO-websites)"
 # googleAnalytics = "UA-xxx..."
 #                 ...+ in head.html add {{template "_internal/google_analytics_async.html" . }}
 theme="basic"
-
+paginate = 3
 
 [params]
 mainSections = ["projects"]
@@ -12,6 +12,7 @@ author = "hpsof"
 description = "Portfolio Demo-Projekt aus Buch"
 github_api_url = "https://api.github.com/users"
 github_user = "hpsof"
+
 
 [caches]
   [caches.getjson]

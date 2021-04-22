@@ -30,7 +30,9 @@
 <hr />
 <div align="center">
   <h4>hier noch ein beispiel für pagination:</h4>
-  {{range (.Paginator 2).Pages }}
+  <!-- anz. seiten direkt einstellen: ... range (.Paginator 2).Pages ... -->
+  <!-- oder in config Paginate= nn setzen -->
+  {{range .Paginator.Pages }}
   <a href="{{.RelPermalink}}">{{.Title}} - {{.Summary}}<br />
   {{end}}
   {{ template "_internal/pagination.html" . }}
