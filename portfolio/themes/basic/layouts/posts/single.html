@@ -1,0 +1,19 @@
+{{define "main"}}
+
+<article class="post">
+  <header>
+    <h2>{{.Title}}</h2>
+    <hr />
+    <small>
+      {{.Params.Author}} hat das geposted {{.Date.Format "2006-01-02 15:04"}} | {{.WordCount}} mit WordCount resp. {{countwords .Content}} mit countwords<br />
+      ungefähre lesezeit {{ math.Round (div .WordCount 200) }} minuten
+    </small>
+
+  </header>
+
+  <section class="body">
+    {{- .Content -}}
+  </section>
+
+</article>
+{{end}}

@@ -7,6 +7,7 @@
   {{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
   <a href="{{.RelPermalink}}">Aktuellstes Projekt: {{.Title}}</a>
   <a href="/opensource">GitHub-Repos</a>
+  <a href="/posts">Liste mit Posts</a>
   {{end}}
 
 </nav>

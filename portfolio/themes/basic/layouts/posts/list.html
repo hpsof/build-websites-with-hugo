@@ -1,0 +1,15 @@
+{{define "main"}}
+
+<small>portfolio\themes\basic\layouts\posts\list.html</small>
+<h2>{{.Title}}</h2>
+
+
+<ul>
+  {{range.Pages}}
+  <li><a href="{{.RelPermalink}}">{{.Title -}}<a> - {{- .Summary -}}</li>
+  {{end}}
+</ul>
+
+
+
+{{end}}
