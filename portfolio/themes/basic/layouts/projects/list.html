@@ -1,10 +1,11 @@
 {{define "main"}}
 
+<small>portfolio\themes\basic\layouts\projects\list.html</small>
 <h2>{{.Title}}</h2>
 
 <div>
   {{.Content}}
-  {{ range first 1 (where site.RegularPages "Type" "in" site.Params.mainSections).ByDate.Reverse }}
+  {{ range first 1 (where site.RegularPages "Type" "in" "projects").ByDate.Reverse }}
   info: aktuellstes projekt in der liste ist <a href="{{.RelPermalink}}">{{.Title}}<a>
   {{end}}
 </div>

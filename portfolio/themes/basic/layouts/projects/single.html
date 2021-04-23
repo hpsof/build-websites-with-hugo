@@ -3,9 +3,10 @@
 <div class="project-container">
 
   <div class="column_left">
+    <small>portfolio\themes\basic\layouts\projects\single.html</small>
     <h2>Projekte</h2>
     <ul>
-      {{ range (where site.RegularPages "Type" "in" site.Params.mainSections).ByTitle }}
+      {{ range (where site.RegularPages "Type" "in" "projects").ByTitle }}
       <li><a href="{{.RelPermalink}}">{{.Title}}<a></li>
       {{end}}
     </ul>
