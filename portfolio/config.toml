@@ -4,6 +4,8 @@ title = "Portfolio (Book building HUGO-websites)"
 # googleAnalytics = "UA-xxx..."
 #                 ...+ in head.html add {{template "_internal/google_analytics_async.html" . }}
 theme="basic"
+#theme="basic-mit-bs5"
+#theme="hugo-hero-theme"
 paginate = 3
 
 [params]

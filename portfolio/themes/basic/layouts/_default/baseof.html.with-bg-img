@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{{- partial "head.html" . -}}
+<body>
+
+
+  {{- $imgsrc := resources.Get "image/IMG_0147.jpg" -}}
+  {{- partial "header.html" . -}}
+  {{- partial "navigation.html" . -}}
+
+  <div class="bg-img">
+    <div class="container">
+      <main>
+        {{- block "main" . }}{{- end }}
+      </main>
+    </div>
+  </div>
+  {{- partial "footer.html" . -}}
+</body>
+</html>

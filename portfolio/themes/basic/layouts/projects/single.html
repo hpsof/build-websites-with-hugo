@@ -15,7 +15,12 @@
   <div class="column_right">
     <h2>{{.Title}}</h2>
     {{.Content}}
-    <img alt="{{.Params.alt_text}}" src="{{.Params.image}}">
+    {{ $img := $.Params.image }}
+    <img alt="{{.Params.alt_text}}" src="{{$img}}">
+    <br />
+    {{- $imgsrc := resources.Get "image/hugo.png" -}}
+    <img src="{{ ($imgsrc.Resize "100x r180 jpg q100").RelPermalink}}">
+
     <h3>Verwendeter Stack</h3>
     <ul>
       {{range .Params.tech_used}}

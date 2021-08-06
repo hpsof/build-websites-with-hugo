@@ -1,6 +1,32 @@
+
+#front, #back { position: absolute; width: 100vw; }
+#back { min-height: 100vh; z-index: 1; }
+#front { z-index: 2; }
+#back {
+  background-image: url("/IMG_0147.jpg");
+  opacity: 0.6;
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.bg-img {
+  background-image:url("/IMG_0147.jpg");
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: 1000px; /* You must set a specified height */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 .container {
   margin: 0 auto;
-  width: 80%
+  padding-left: 5px;
+  padding-top: 5px;
+  width: 100%
 }
 
 nav, footer {
