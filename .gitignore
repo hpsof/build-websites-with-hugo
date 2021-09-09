@@ -12,5 +12,5 @@
 *.out
 hugo.cmd
 */public/*
-themes/hugo-hero-theme/
-/resources/
+*/resources/*
+portfolio/themes/hugo-hero-theme/
