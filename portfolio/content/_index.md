@@ -8,4 +8,4 @@
 
 - > hier kommt dann auch eine navigation
 - > und gerne ein `schönes` hintergrundbild
-- [![Hugo](hugo.png)"hi i am hugo"]
+- [![Hugoooo](hugo_static.png)"hi i am hugo"]
