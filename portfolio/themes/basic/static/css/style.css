@@ -3,7 +3,7 @@
 #back { min-height: 100vh; z-index: 1; }
 #front { z-index: 2; }
 #back {
-  background-image: url("/IMG_0147.jpg");
+  background-image: url("/IMG_0147_static.jpg");
   opacity: 0.6;
   background-color: #cccccc; /* Used if the image is unavailable */
   background-position: center;
@@ -13,7 +13,7 @@
 }
 
 .bg-img {
-  background-image:url("/IMG_0147.jpg");
+  background-image:url("/IMG_0147_static.jpg");
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 1000px; /* You must set a specified height */
   background-position: center;
