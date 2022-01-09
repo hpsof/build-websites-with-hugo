@@ -14,3 +14,4 @@ hugo.cmd
 */public/*
 */resources/*
 portfolio/themes/hugo-hero-theme/
+portfolio/.hugo_build.lock
