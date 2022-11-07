@@ -1,4 +1,30 @@
-baseURL: http://example.org/
-languageCode: en-us
+baseURL: https://www.kijumed.ch/
+languageCode: de-CH
 title: KiJuMed-Praxis in Bern
 theme: Eclectic
+
+author:
+  email: info@sofim.com
+  name: KiJuMed-Praxis
+  location: Berne
+
+menu:
+  main: 
+    - identifier: about
+      name: Über
+      url: /about
+      weight: 90
+    - identifier: links
+      name: Links
+      url: /links
+      weight: 20
+
+params:
+  color: "#BCC6CC"
+  copyright: "&copy; 2022 KiJuMed-Praxis | "
+  footer:
+    - title: Über uns
+      content: >
+        Viel BlaBla-Blupper aus dem hohlen Bäuchlein...
+    - title: Nützliche Links
+      content: unbekannt

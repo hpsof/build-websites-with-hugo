@@ -15,3 +15,6 @@ hugo.cmd
 */resources/*
 portfolio/themes/hugo-hero-theme/
 portfolio/.hugo_build.lock
+kijumed/themes/.DS_Store
+kijumed/themes/Eclectic/.DS_Store
+.DS_Store
