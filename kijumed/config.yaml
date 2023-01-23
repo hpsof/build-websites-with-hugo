@@ -1,7 +1,7 @@
 baseURL: https://www.kijumed.ch/
 languageCode: de-CH
 title: KiJuMed-Praxis in Bern
-theme: Eclectic
+#theme: Eclectic
 
 author:
   email: info@sofim.com
@@ -22,6 +22,7 @@ menu:
 params:
   color: "#BCC6CC"
   copyright: "&copy; 2022 KiJuMed-Praxis | "
+  copyleft: "2022 KiJuMed-Praxis"
   footer:
     - title: Über uns
       content: >

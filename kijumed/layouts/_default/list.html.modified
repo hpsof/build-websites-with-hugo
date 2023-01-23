@@ -1,0 +1,10 @@
+
+===> list.html im ordner layouts/_default vor "define main" ==>
+{{ define "main" }}
+  ===> list.html im ordner layouts/_default füllt .Content aus ==>
+  {{ .Content }}
+{{ end }}
+
+<hr>
+<h3> .Content (ohne main-block-existenz-abfrage) =></h3>
+{{ .Content }} 

@@ -1,0 +1,9 @@
+<hr />
+
+{{ with .Params.hide_footer }}
+	<!-- nix footer -->
+{{ else }}
+	<footer>
+		&copy; {{- .Site.Params.copyleft }} 
+	</footer>
+{{ end }}
